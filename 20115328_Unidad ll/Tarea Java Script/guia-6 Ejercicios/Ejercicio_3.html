@@ -1,0 +1,52 @@
+<!-- 
+  3. Realice una página web que lea por teclado dos números, si el primero es mayor al
+segundo informar su suma y diferencia, en caso contrario informar el producto y la
+división del primero respecto al segundo.
+
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Numero Mayor</title>
+
+</head>
+
+<body>
+    <h4>Si el primero es mayor al
+        segundo informar su suma y diferencia, en caso contrario informar el producto y la
+        división del primero respecto al segundo.</h4>
+    <br><br>
+    <input type="text" placeholder="write a number" id='numero1'><br><br>
+    <input type="text" placeholder="write a number" id='numero2'><br><br>
+    <input type="button" name="name" value="Enter" onClick="Calculos()">
+
+    <script type="text/javascript">
+        function Calculos() {
+            var Number1 = parseInt(document.getElementById('numero1').value);
+            var Number2 = parseInt(document.getElementById('numero2').value);
+            var suma=0;
+            var res=0;
+            var producto=0;
+            var division=0;
+
+            if(Number1 > Number2)
+            {
+                suma=Number1+Number2;
+                res=Number1-Number2;
+                alert('La suma es: '+suma+ ' Y la resta es: '+res);
+            }
+
+            else 
+            {
+                producto=Number2*Number1;
+                division=Number2/Number1;
+                alert('El producto es: '+producto+ ' Y la division es: '+division);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
