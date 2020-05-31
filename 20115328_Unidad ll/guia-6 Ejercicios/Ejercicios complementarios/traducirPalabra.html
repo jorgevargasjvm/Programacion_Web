@@ -1,0 +1,48 @@
+<!-- 
+    1. Realice una página web que solicite el ingreso alguna de estas palabras (casa, mesa,
+perro, gato) luego mostrar la palabra traducida en inglés. Es decir, si se ingresa 'casa'
+debemos mostrar el texto 'house' en la página.
+
+-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Traducir Palabras</title>
+
+</head>
+
+<body>
+    <h4>Traducir Palabras</h4>
+    <br><br>
+    <input type="text" placeholder="Escribir palabra" id='word'><br><br>
+    <input type="button" name="name" value="Enter" onClick="Traducir()">
+
+    <script type="text/javascript">
+        function Traducir() {
+            var Palabra = document.getElementById('word').value;
+            Palabra = Palabra.toLowerCase();
+            if (Palabra == 'casa') {
+                alert('House');
+            }
+
+            else if (Palabra == 'mesa') {
+                alert('Table');
+            }
+            else if (Palabra == 'perro') {
+                alert('Dog');
+            }
+            else if (Palabra == 'gato') {
+                alert('Cat');
+            }
+
+            else
+                alert('La palabra no esta definida');
+
+        }
+
+    </script>
+</body>
+
+</html>
