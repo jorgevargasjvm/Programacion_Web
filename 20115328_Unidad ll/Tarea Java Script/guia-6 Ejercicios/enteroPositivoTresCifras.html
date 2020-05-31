@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cifras de un numero</title>
+
+</head>
+
+<body>
+    <h4>Cifras de un numero</h4>
+    <br><br>
+    <input type="text" placeholder="write a number" id='numero'><br><br>
+    <input type="button" name="name" value="Enter" onClick="CifrasNumero()">
+
+    <script type="text/javascript">
+        function CifrasNumero() {
+            var Number1 = parseInt(document.getElementById('numero').value);
+            var limiteNum=Number1;
+            Number1 = Number1.toString().length
+
+            if(Number1 > 3)
+            {
+                alert('No se permiten numeros de cuatro cifras');
+            }
+
+            else if (limiteNum < 0)
+            {
+                alert('No se aceptan numeros negativos');
+            }
+            else 
+            {
+                alert('Las cifras del numero son: '+Number1);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
